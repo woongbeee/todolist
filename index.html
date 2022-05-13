@@ -1,0 +1,78 @@
+﻿<!DOCTYPE html>
+
+<html>
+<head>
+    <meta charset="utf-8" />
+    <link rel="stylesheet" href="./src/index.css">
+    <title>TO DO LIST</title>
+</head>
+<body>
+    <h4 id="title">TO DO LIST, developed by woongbee</h4>
+    <div class="App">
+        <div id="days">
+            <div id="today"></div>
+            <div id="monthYear">
+                <div id="month"></div>
+                <div id="year"></div>
+            </div>
+            <div id="tue"></div>
+        </div>
+    </div>
+    <script>
+        const now = new Date();
+        const today = document.getElementById("today");
+        today.innerHTML = now.getDate();
+        const month = document.getElementById("month");
+        const year = document.getElementById("year");
+        year.innerHTML = now.getFullYear();
+        const tue = document.getElementById('tue');
+
+        switch (now.getDay()) {
+            case 0: tue.innerHTML = "SUNDAY"
+                break;
+            case 1: tue.innerHTML = "MONDAY"
+                break;
+            case 2: tue.innerHTML = "TUESDAY"
+                break;
+            case 3: tue.innerHTML = "WEDNESDAY"
+                break;
+            case 4: tue.innerHTML = "THUSDAY"
+                break;
+            case 5: tue.innerHTML = "FRIDAY"
+                break;
+            case 6: tue.innerHTML = "SATURDAY"
+                break;
+        }
+
+        switch (now.getMonth()) {
+            case 0: month.innerHTML = "JAN"
+                break;
+            case 1: month.innerHTML = "FEB"
+                break;
+            case 2: month.innerHTML = "MAR"
+                break;
+            case 3: month.innerHTML = "APR"
+                break;
+            case 4: month.innerHTML = "MAY"
+                break;
+            case 5: month.innerHTML = "JUN"
+                break;
+            case 6: month.innerHTML = "JUL"
+                break;
+            case 7: month.innerHTML = "AUG"
+                break;
+            case 8: month.innerHTML = "SEP"
+                break;
+            case 9: month.innerHTML = "OCT"
+                break;
+            case 10: month.innerHTML = "NOV"
+                break;
+            case 11: month.innerHTML = "DEC"
+                break;
+        }
+       
+
+    </script>
+    <script defer src="./src/index.js" type="module"></script>
+</body>
+</html>

@@ -1,0 +1,102 @@
+﻿@import url('https://fonts.googleapis.com/css2?family=Noto+Serif+KR:wght@200;400;600&display=swap');
+
+body {
+    font-family: 'Noto Serif KR', serif;
+    background-color:rgb(128, 128, 128,0.2);
+}
+
+#title {
+    font-size: 1rem;
+    text-align: center;
+    margin-bottom:5px;
+    margin-top:50px;
+}
+.App{
+    text-align:center;
+    background-color:white;
+    border-radius:5px;
+    width:550px;
+    height:600px;
+    margin:auto;
+}
+#days{
+    float:left;
+}
+#today{
+    display:inline-block;
+    font-size:3rem;
+    margin-left:50px;
+    margin-top:20px;
+}
+#monthYear{
+    display:inline-block;
+}
+#tue {
+    display: inline-block;
+    position:relative;
+    margin-left: 250px;
+    font-size:1.5rem;
+}
+
+#addButton{
+    font-size:1.5rem;
+    width:40px;
+    margin-left:5px;
+}
+
+#write{
+    width:400px;
+    margin-top:10px;
+    font-size:1.3rem;
+}
+
+.Todo{
+    text-align:center;
+    width:500px;
+    height:auto;
+    margin:auto;
+}
+
+.list {
+    float: left;
+    margin-left: 20px;
+    margin-top:10px;
+}
+
+.list>input{
+    display:inline-block;
+    float:left;
+    top:7px;
+    width:25px;
+    height:25px;
+    margin-right:10px;
+}
+#one{
+    display:inline-block;
+    float:left;
+    text-align:left;
+    width:400px;
+    font-size:1.2rem;
+   
+}
+
+.remove{
+    width:60px;
+    height:25px;
+    font-size:1rem;
+    margin-left:10px;
+    background-color:transparent;
+    border:none;
+    color:lightgray;
+}
+.remove:hover{
+    color:black;
+    cursor:pointer;
+}
+
+.list > input[type="checkbox"]:checked + #one>label {
+    color: lightgrey;
+    text-decoration-line: line-through;
+    text-decoration-color: red;
+
+}
